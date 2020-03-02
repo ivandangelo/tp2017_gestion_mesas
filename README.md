@@ -25,15 +25,13 @@ Las funcionalidades de este módulo son:
 
 Las mesas pueden tener los siguientes estados:
 
-● **disponible** : Lista para recibir clientes. En este estado nunca puede tener consumiciones,
+- **disponible** : Lista para recibir clientes. En este estado nunca puede tener consumiciones,
 ni se pueden agregar nuevas consumiciones. Siempre puede pasar a los estados ocupada
 o cerrada.
-
-● **cerrada** : mesa que no puede ocuparse (porque está rota o porque no se va a usar). En
+- **cerrada** : mesa que no puede ocuparse (porque está rota o porque no se va a usar). En
 este estado nunca puede tener consumiciones, ni se pueden agregar nuevas
 consumiciones. Siempre puede pasar a disponible.
-
-● **ocupada** : mesa con clientes a la que se le puede agregar consumiciones. Pasa a
+- **ocupada** : mesa con clientes a la que se le puede agregar consumiciones. Pasa a
 disponible cuando los clientes pagan o si deciden irse sin haber consumido nada. Solo
 puede pasar a disponible, pero siempre que no tenga consumiciones.
 
@@ -59,7 +57,9 @@ Estos productos se pueden clasificar en las siguientes categorías:
 - hamburguesas
 - minutas
 - combos
+
 Estas categorías se usan para generar promociones.
+
 Por cada producto que se ofrece en el bar que es plausible de generar una consumición. Se lleva
 un registro con al menos la siguiente información:
 - código de producto: es un número entero, único, que identifica unívocamente al producto.
@@ -67,5 +67,44 @@ un registro con al menos la siguiente información:
 “HAMBURGUESA DE POLLO”, “PIZZA NAPOLITANA”, etc.
 - precio de costo
 - precio de venta
+
+El precio de venta nunca podrá ser inferior al precio de costo.
+
+Las funcionalidades de este módulo son:
+- consultar datos de un producto (por descripción o por código)
+- dar de alta un nuevo producto
+- dar de baja un producto
+- modificar un producto existente
+- generar un combo (en base a los productos existentes, incluso en base a otros combos).
+- imprimir carta
+
+## Combos:
+Los combos son una lista de productos existentes (incluso otros combos) a los que se les aplica
+un descuento sobre la suma de los precios de venta de los productos que lo componen. De los
+combos se registra lo indicado en producto y además la siguiente información:
+- descuento: número entero entre 0 y 100 (representa el porcentaje de descuento a aplicar)
+
+## Imprimir carta:
+Debe emitir un archivo de texto con la descripción y precio de venta de todos los productos en el
+siguiente orden:
+Bebidas sin alcohol
+bebidas con alcohol
+hamburguesas
+pizzas
+minutas
+otros
+combos
+De los combos también se debe mostrar la lista de productos que contienen.
+
+## Módulo de caja:
+El módulo de caja genera los tickets, y los almacena para listarlos.
+Las funcionalidades son:
+- Generar ticket de una mesa dada: esta funcionalidad genera el ticket y lo imprime en
+pantalla, además debe vaciar la lista de consumiciones de la mesa y pasarla al estado
+disponible.
+- Listar todos tickets (dentro de un rango de fechas dadas).
+
+## Ticket
+De cada ticket se registra:
 
 
