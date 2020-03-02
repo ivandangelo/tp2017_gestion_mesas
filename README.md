@@ -14,6 +14,7 @@ vacía).
 
 
 Las funcionalidades de este módulo son:
+
 ● ocupar una mesa
 
 ● cerrar una mesa
@@ -23,6 +24,7 @@ Las funcionalidades de este módulo son:
 ● registrar consumición
 
 Las mesas pueden tener los siguientes estados:
+
 ● **disponible** : Lista para recibir clientes. En este estado nunca puede tener consumiciones,
 ni se pueden agregar nuevas consumiciones. Siempre puede pasar a los estados ocupada
 o cerrada.
