@@ -1,4 +1,4 @@
-## Trabajo Práctico Nro 2
+# Trabajo Práctico Nro 2
 
 ### Enunciado:
 Un cliente nos solicitó el desarrollo de un sistema para administrar las ventas que se realizan en
