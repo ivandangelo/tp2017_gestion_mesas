@@ -37,4 +37,4 @@ consumiciones. Siempre puede pasar a disponible.
 disponible cuando los clientes pagan o si deciden irse sin haber consumido nada. Solo
 puede pasar a disponible, pero siempre que no tenga consumiciones.
 
-![](/v.png)
+![](Desktop/v.png)
