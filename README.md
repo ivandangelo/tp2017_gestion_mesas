@@ -15,6 +15,7 @@ vacía).
 
 Las funcionalidades de este módulo son:
 ● ocupar una mesa
+
 ● cerrar una mesa
 ● pasar una mesa a estado disponible
 ● registrar consumición
@@ -30,4 +31,4 @@ consumiciones. Siempre puede pasar a disponible.
 disponible cuando los clientes pagan o si deciden irse sin haber consumido nada. Solo
 puede pasar a disponible, pero siempre que no tenga consumiciones.
 
-![](C:\Users\ivaance\Desktop\v.png)
+! [](C:\Users\ivaance\Desktop\v.png)
