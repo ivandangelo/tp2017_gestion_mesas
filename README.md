@@ -14,14 +14,10 @@ vacía).
 
 
 Las funcionalidades de este módulo son:
-
-● ocupar una mesa
-
-● cerrar una mesa
-
-● pasar una mesa a estado disponible
-
-● registrar consumición
+- ocupar una mesa
+- cerrar una mesa
+- pasar una mesa a estado disponible
+- registrar consumición
 
 Las mesas pueden tener los siguientes estados:
 
@@ -106,5 +102,17 @@ disponible.
 
 ## Ticket
 De cada ticket se registra:
+- Número de ticket: único en todo el sistema.
+- Fecha y hora
+- Número de mesa
+- Lista de consumiciones
+- Monto total a cobrar
 
+## Generar ticket:
+Dada una mesa calcula el total como la suma de los precios de venta de cada producto. En el
+caso de los combos el precio de venta se calcula como la suma de la lista de productos del combo
+menos el descuento correspondiente.
 
+## Listar todos tickets (dentro de un rango de fechas dadas)
+Muestra por pantalla el número ticket y el monto total del mismo y al final la suma de todos los
+ingresos.
