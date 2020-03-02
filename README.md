@@ -37,6 +37,6 @@ consumiciones. Siempre puede pasar a disponible.
 disponible cuando los clientes pagan o si deciden irse sin haber consumido nada. Solo
 puede pasar a disponible, pero siempre que no tenga consumiciones.
 
+![v](https://user-images.githubusercontent.com/60303079/75649690-ae437c80-5c32-11ea-942e-0e5df0bb2e31.png)
 
-![](https://raw.githubusercontent.com/ivandangelo/tp2017_gestion_mesas/master/tp2017_gestion_mesas/v.png)
 
