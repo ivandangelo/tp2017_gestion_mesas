@@ -46,24 +46,26 @@ realizar automáticamente el sistema una vez que se genera el ticket.
 En la situación especial en que un cliente decide irse sin haber consumido nada se pasará en
 forma manual la mesa al estado disponible .
 Por cada consumición se registra el código de producto y la cantidad.
-Módulo de gestión de precios:
+
+## Módulo de gestión de precios:
 Este módulo agrupa toda la funcionalidad vinculada a la gestión de precios, tanto los precios de
 venta al público como los precios de costo de los productos que se ofrecen en el bar.
 Estos productos se pueden clasificar en las siguientes categorías:
-● bebidas
-○ c/alcohol (bebida con alcohol)
-○ s/alcohol (bebida sin alcohol)
-● pizzas
-● hamburguesas
-● minutas
-● combos
+
+- bebida
+    - c/alcohol (bebida con alcohol)
+    - s/alcohol (bebida sin alcohol)
+- pizzas
+- hamburguesas
+- minutas
+- combos
 Estas categorías se usan para generar promociones.
 Por cada producto que se ofrece en el bar que es plausible de generar una consumición. Se lleva
 un registro con al menos la siguiente información:
-● código de producto: es un número entero, único, que identifica unívocamente al producto.
-● descripción: descripción del producto, por ejemplo, “STELLA ARTOIS 330 ML”,
+- código de producto: es un número entero, único, que identifica unívocamente al producto.
+- descripción: descripción del producto, por ejemplo, “STELLA ARTOIS 330 ML”,
 “HAMBURGUESA DE POLLO”, “PIZZA NAPOLITANA”, etc.
-● precio de costo
-● precio de venta
+- precio de costo
+- precio de venta
 
 
